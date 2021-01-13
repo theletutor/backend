@@ -14,5 +14,9 @@
 
 	<modules>
 		<module>library</module>
+		<module>library/lib-auth</module>
+		<module>library/lib-logging</module>
+		<module>library/lib-exception</module>
+		<module>library/lib-http</module>
 	</modules>
 </project>
