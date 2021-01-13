@@ -13,7 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<modules>
-		<module>library</module>
 		<module>library/lib-auth</module>
 		<module>library/lib-logging</module>
 		<module>library/lib-exception</module>
