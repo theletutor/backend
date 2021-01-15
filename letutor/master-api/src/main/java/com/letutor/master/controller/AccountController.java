@@ -1,8 +1,27 @@
 package com.letutor.master.controller;
 
+import com.letutor.master.dto.CreateAccountRequest;
+import com.letutor.master.dto.CreateAccountResponse;
+import com.letutor.master.service.IAccountService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "/v1/account")
 public class AccountController {
 
-  public void createAccount() {
+  private final IAccountService accountService;
+
+  public AccountController(IAccountService accountService) {
+    this.accountService = accountService;
+  }
+
+  @PostMapping(value = "/create")
+  public CreateAccountResponse createAccount(
+      @RequestBody CreateAccountRequest createAccountRequest) {
+    return accountService.createAccount(createAccountRequest);
 
   }
 }
