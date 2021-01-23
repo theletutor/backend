@@ -1,7 +1,7 @@
 package com.letutor.master.controller;
 
-import com.letutor.master.dto.CreateAccountRequest;
-import com.letutor.master.dto.CreateAccountResponse;
+import com.letutor.master.dto.request.CreateAccountRequest;
+import com.letutor.master.dto.response.CreateAccountResponse;
 import com.letutor.master.service.IAccountService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,9 +19,7 @@ public class AccountController {
   }
 
   @PostMapping(value = "/create")
-  public CreateAccountResponse createAccount(
-      @RequestBody CreateAccountRequest createAccountRequest) {
+  public CreateAccountResponse createAccount(@RequestBody CreateAccountRequest createAccountRequest) {
     return accountService.createAccount(createAccountRequest);
-
   }
 }
