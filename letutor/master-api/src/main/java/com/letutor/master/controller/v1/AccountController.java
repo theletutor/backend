@@ -1,4 +1,4 @@
-package com.letutor.master.controller;
+package com.letutor.master.controller.v1;
 
 import com.letutor.master.dto.request.CreateAccountRequest;
 import com.letutor.master.dto.response.CreateAccountResponse;

@@ -1,4 +1,4 @@
-package com.letutor.master.controller;
+package com.letutor.master.controller.v1;
 
 import com.letutor.master.dto.response.AllTutorDetailsResponse;
 import com.letutor.master.dto.response.TutorDetailsResponse;
