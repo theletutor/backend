@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://libas:PygV6e5l2ZCywnxB@cluster-letutor.p3vng.monogdb.net/letutor?retryWrites=true&w=majority
