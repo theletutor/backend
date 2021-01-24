@@ -1,5 +1,8 @@
 package com.letutor.master.service;
 
+import com.letutor.master.dto.request.CreateAccountRequest;
+import com.letutor.master.dto.response.CreateAccountResponse;
+
 public interface IAccountService {
-  void createAccount();
+  CreateAccountResponse createAccount(CreateAccountRequest createAccountRequest);
 }

@@ -1,0 +1,17 @@
+logging:
+  path: /data
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: libas
+    password: kaka
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+  data:
+    mongodb:
+      uri: mongodb+srv://libas:123kaka@cluster-letutor.p3vng.mongodb.net/letutor?retryWrites=true&w=majority

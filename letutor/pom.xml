@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<packaging>pom</packaging>
-	<parent>
-		<groupId>com.letutor</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>parent/pom.xml</relativePath> <!-- lookup parent from repository -->
-	</parent>
-	<artifactId>letutor</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>letutor</artifactId>
+  <modelVersion>4.0.0</modelVersion>
+  <version>0.0.1-SNAPSHOT</version>
 
-	<modules>
-		<module>library/lib-auth</module>
-		<module>library/lib-logging</module>
-		<module>library/lib-exception</module>
-		<module>library/lib-http</module>
-		<module>master-api</module>
-	</modules>
-</project>
+  <packaging>pom</packaging>
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>com.letutor</groupId>
+    <relativePath>parent/pom.xml</relativePath>
+    <version>0.0.1-SNAPSHOT</version> <!-- lookup parent from repository -->
+  </parent>
+
+  <profiles>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <id>all</id>
+      <modules>
+        <module>library/lib-auth</module>
+        <module>library/lib-logging</module>
+        <module>library/lib-exception</module>
+        <module>library/lib-http</module>
+        <module>master-api</module>
+        <module>master-api-core</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>master-api</id>
+      <modules>
+        <module>master-api</module>
+        <module>master-api-core</module>
+      </modules>
+    </profile>
+  </profiles>
+  </project>

@@ -12,5 +12,11 @@
 
     <artifactId>lib-exception</artifactId>
 
-
+<dependencies>
+    <dependency>
+        <groupId>com.letutor</groupId>
+        <artifactId>lib-logging</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+</dependencies>
 </project>
