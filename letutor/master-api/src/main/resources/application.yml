@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: MasterApplication
+  profiles:
+    active: ${env}
+  main:
+    banner-mode: off
+
+server:
+  port: 8081
