@@ -20,11 +20,11 @@ public class TutorController {
 
   @GetMapping(value = "/all")
   public AllTutorDetailsResponse getAllTutors(){
-    return tutorService.getDetailsOfAllTutors();
+    return tutorService.getAllTutorDetails();
   }
 
   @GetMapping(value = "/{id}")
   public TutorDetailsResponse getTutorDetails(@PathVariable String id){
-    return tutorService.getDetailsOfTutor(id);
+    return tutorService.getTutorDetails(id);
   }
 }
