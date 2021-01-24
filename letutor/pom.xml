@@ -18,5 +18,6 @@
 		<module>library/lib-exception</module>
 		<module>library/lib-http</module>
 		<module>master-api</module>
+		<module>master-api-core</module>
 	</modules>
 </project>

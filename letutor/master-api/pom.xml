@@ -11,5 +11,12 @@
 
     <artifactId>master-api</artifactId>
 
+<dependencies>
+    <dependency>
+        <groupId>com.letutor</groupId>
+        <artifactId>master-api-core</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+</dependencies>
 
 </project>
