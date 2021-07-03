@@ -1,17 +1,19 @@
 logging:
-  path: /tmp
+  path: C:\Users\windows10\Desktop\LeTutor\logs
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    username: libas
-    password: kaka
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/letutor
+    username: root
+    password: Mantu
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
   h2:
     console:
       enabled: true
-  data:
-    mongodb:
-      uri: mongodb+srv://libas:123kaka@cluster-letutor.p3vng.mongodb.net/letutor?retryWrites=true&w=majority
+#    data:
+#     mongodb:
+#     uri: mongodb+srv://libas:123kaka@cluster-letutor.p3vng.mongodb.net/letutor?retryWrites=true&w=majority

@@ -2,7 +2,7 @@ spring:
   application:
     name: MasterApplication
   profiles:
-    active: ${env}
+    active: local
   main:
     banner-mode: off
 

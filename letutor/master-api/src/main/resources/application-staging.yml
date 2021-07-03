@@ -12,6 +12,6 @@ spring:
   h2:
     console:
       enabled: true
-  data:
-    mongodb:
-      uri: mongodb+srv://libas:123kaka@cluster-letutor.p3vng.mongodb.net/letutor?retryWrites=true&w=majority
+#  data:
+#    mongodb:
+#      uri: mongodb+srv://libas:123kaka@cluster-letutor.p3vng.mongodb.net/letutor?retryWrites=true&w=majority
